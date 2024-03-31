@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(212, 141, 96);
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 2rem;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 270px;
+}
+.navigation a{
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active{
+    background-color: #359381;
+    color: white;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#text{
+    position: absolute;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, .2);
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec{
+    position: relative;
+    background-color: #003329;
+    padding: 100px;
+}
+.sec h2{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.sec p{
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+.trail{
+    position: absolute;
+  background-color: red; 
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  pointer-events: none; 
+  z-index: 9999;
+}
+.segment {
+    position: absolute;
+    background-color: red;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    pointer-events: none; 
+    z-index: 9999; 
+  }
+
+
+  .spark {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: #FFD700;
+
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+
+  .spark {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: #FFD700;
+    transition: background-color 0.3s ease;
+}
+
+.spark:hover {
+    background-color: #FF0000; 
+}
